@@ -12,7 +12,7 @@ import java.util.List;
 public class Server {
     private int port;
     private Thread thread;
-    private List<Message> msg = Collections.synchronizedList(new ArrayList<Message>());
+    private List<Message> msg = Collections.synchronizedList(new ArrayList<>());
 
     public Server(int port) {
         this.port = port;
