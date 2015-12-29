@@ -70,7 +70,8 @@ public class Message implements Serializable {
             if ( ! msg.isFile) {
                 msg.text = (String) os.readUTF();
             } else {
-                // read file content
+                // write file content
+                byte msgFile = os.readByte();
             }
 
             return msg;
