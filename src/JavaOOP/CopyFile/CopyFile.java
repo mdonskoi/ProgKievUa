@@ -35,8 +35,10 @@ public class CopyFile {
          os.write(buf, 0, n);
      os.flush();
      os.close();
+     is.close();
+
  }catch (IOException e){
-     System.out.println(e.getCause());
+     System.out.println(e.getCause().toString());
  }
         long end = System.currentTimeMillis();
         System.out.print("Time: ");
