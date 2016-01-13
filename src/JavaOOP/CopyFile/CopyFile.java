@@ -47,8 +47,6 @@ public class CopyFile {
 
     public static void main(String[] args) {
         CopyFile c = new CopyFile();
-
-
         c.copy();
     }
 
