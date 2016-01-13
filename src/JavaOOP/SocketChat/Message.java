@@ -1,4 +1,4 @@
-package JavaOOP;
+package JavaOOP.SocketChat;
 import java.io.*;
 import java.util.Date;
 
@@ -11,6 +11,9 @@ public class Message implements Serializable {
     public boolean isFile;
     public transient String text;
     public transient String path;
+    InputStream is;
+    OutputStream os;
+    byte[] buf;
 
     @Override
     public String toString() {
@@ -38,7 +41,16 @@ public class Message implements Serializable {
                 os.writeUTF(text);
             } else {
                 // write file content
+                //////////////////////////////////////////////////
+                int n;
+                while ((n = is.read(buf)) > 0)
+                    os.write(buf, 0, n);
+                os.flush();
+                os.close();
+                is.close();
+
             }
+            //////////////////////////////////////////////////////
         } finally {
             os.flush();
             os.close();
@@ -71,6 +83,22 @@ public class Message implements Serializable {
                 msg.text = (String) os.readUTF();
             } else {
                 // write file content
+                //////////////////////////////////////////////////////////
+                try {
+
+                    String path = msg.text;
+                    InputStream is = new FileInputStream(path);
+                    byte[] buf = new byte[4*1024];
+                    int n;
+                    while ((n = is.read(buf)) > 0)
+                        is.read(buf);
+
+
+
+                }catch (IOException e){
+                    System.out.println(e.getCause().toString());
+                }
+                ///////////////////////////////////////////////////////////
                 byte msgFile = os.readByte();
             }
 

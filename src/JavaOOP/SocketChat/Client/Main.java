@@ -1,7 +1,6 @@
 package JavaOOP.SocketChat.Client;
-import JavaOOP.Message;
+import JavaOOP.SocketChat.Message;
 
-import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 import java.net.Socket;

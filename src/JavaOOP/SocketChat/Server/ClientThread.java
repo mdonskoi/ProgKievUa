@@ -1,5 +1,5 @@
 package JavaOOP.SocketChat.Server;
-import JavaOOP.Message;
+import JavaOOP.SocketChat.Message;
 
 import java.io.IOException;
 import java.io.InputStream;
