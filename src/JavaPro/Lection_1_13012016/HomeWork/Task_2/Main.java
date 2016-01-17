@@ -32,6 +32,7 @@ class TextContainer {
         FileWriter fw = new FileWriter(fileName);
         try {
             fw.write(this.text);
+            System.out.println("File successfully saved."); // ToDo: Add path. (Saved to: Folder)
         }
         catch (Exception e){
             System.out.println(e.getCause().toString());
