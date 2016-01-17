@@ -57,7 +57,7 @@ class MyClass{
 
 class Serializer{
     public static void serialize(Object object, BufferedWriter bw, int level) throws IOException, IllegalAccessException {
-        if (bw==null) bw = new BufferedWriter(new FileWriter("c:\\Java\\serialize.txt"));
+        if (bw==null) bw = new BufferedWriter(new FileWriter("/home/administrator/Рабочий стол/Out/serialize.txt"));
         Class<?> cl = object.getClass();
         Field[] fields = cl.getDeclaredFields();
         String def = "";
