@@ -9,7 +9,7 @@ public class SomeClass {
 		return res;
 	}
 	
-	@Test
+	@Test(a = 2, b = 5)
 	public static boolean selfTest() {
 		boolean res = job(1, 2, 3, 4) == 10;
 		System.out.println("SomeClass: " + res);

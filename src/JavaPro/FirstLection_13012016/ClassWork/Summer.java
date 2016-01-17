@@ -1,4 +1,4 @@
-package JavaPro.FirstLection_13012016;
+package JavaPro.FirstLection_13012016.ClassWork;
 
 /**
  * Created by administrator on 13.01.16.

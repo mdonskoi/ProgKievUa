@@ -1,4 +1,4 @@
-package JavaPro.FirstLection_13012016;
+package JavaPro.FirstLection_13012016.ClassWork;
 
 import java.lang.annotation.*;
 import java.lang.reflect.*;
