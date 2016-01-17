@@ -1,4 +1,4 @@
-package JavaPro.FirstLection_13012016.Tester;
+package JavaPro.FirstLection_13012016.ClassWork.Tester;
 
 import JavaPro.FirstLection_13012016.ClassWork.Test;
 

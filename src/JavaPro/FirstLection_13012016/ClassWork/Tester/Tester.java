@@ -1,6 +1,4 @@
-package JavaPro.FirstLection_13012016.Tester;
-
-import JavaPro.FirstLection_13012016.Tester.Test;
+package JavaPro.FirstLection_13012016.ClassWork.Tester;
 
 import java.lang.reflect.Method;
 

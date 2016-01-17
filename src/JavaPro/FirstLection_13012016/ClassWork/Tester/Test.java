@@ -1,4 +1,4 @@
-package JavaPro.FirstLection_13012016.Tester;
+package JavaPro.FirstLection_13012016.ClassWork.Tester;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

@@ -1,4 +1,4 @@
-package JavaPro.FirstLection_13012016.Tester;
+package JavaPro.FirstLection_13012016.ClassWork.Tester;
 
 public class Main {
 	public static void main(String[] args) {

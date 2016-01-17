@@ -1,4 +1,4 @@
-package JavaPro.FirstLection_13012016.Tester;
+package JavaPro.FirstLection_13012016.ClassWork.Tester;
 
 public class SomeClass {
 	public static long job(long...ls) {
