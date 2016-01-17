@@ -1,4 +1,4 @@
-package JavaPro.FirstLection_13012016.ClassWork.Tester;
+package JavaPro.Lection_1_13012016.ClassWork.Tester;
 
 import java.lang.reflect.Method;
 

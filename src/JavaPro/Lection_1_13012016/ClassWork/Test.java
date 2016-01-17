@@ -1,7 +1,6 @@
-package JavaPro.FirstLection_13012016.ClassWork;
+package JavaPro.Lection_1_13012016.ClassWork;
 
 import java.lang.annotation.*;
-import java.lang.reflect.*;
 
 @Target(value = ElementType.METHOD)
 @Retention(value = RetentionPolicy.RUNTIME)

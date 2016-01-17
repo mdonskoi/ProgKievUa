@@ -1,6 +1,6 @@
-package JavaPro.FirstLection_13012016.ClassWork.Tester;
+package JavaPro.Lection_1_13012016.ClassWork.Tester;
 
-import JavaPro.FirstLection_13012016.ClassWork.Test;
+import JavaPro.Lection_1_13012016.ClassWork.Test;
 
 public class OtherClass {
 

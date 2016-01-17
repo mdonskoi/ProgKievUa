@@ -1,4 +1,4 @@
-package JavaPro.FirstLection_13012016.ClassWork;
+package JavaPro.Lection_1_13012016.ClassWork;
 
 
 public class Foo {
