@@ -1,8 +1,8 @@
-package com.company;
+package JavaPro.Lection_2_18012016.ClassWork.JAXB;
 
-import java.util.Date;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
+import java.util.Date;
 
 /**
  * Created by Bios on 28.04.14.

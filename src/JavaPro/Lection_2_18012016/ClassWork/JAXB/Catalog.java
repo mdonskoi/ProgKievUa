@@ -1,4 +1,4 @@
-package com.company;
+package JavaPro.Lection_2_18012016.ClassWork.JAXB;
 
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;

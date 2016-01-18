@@ -1,4 +1,5 @@
-package com.company;
+package JavaPro.Lection_2_18012016.ClassWork.JAXB;
+
 
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
@@ -8,7 +9,7 @@ import java.io.File;
 import java.util.Date;
 
 public class Main {
-    
+
     public static void main(String[] args) {
         Catalog catalog = new Catalog();
         catalog.add(new Book("Author1", "Title1", 14.55, new Date()));
@@ -33,5 +34,5 @@ public class Main {
         } catch (JAXBException e) {
             e.printStackTrace();
         }
-    }  
+    }
 }
