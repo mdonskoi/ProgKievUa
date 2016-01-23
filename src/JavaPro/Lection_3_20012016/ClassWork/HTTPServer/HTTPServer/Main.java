@@ -4,7 +4,7 @@ import java.lang.Thread;
 
 public class Main {
     public static void main(String[] args) {
-        final HTTPServer server = new HTTPServer(8080, "/Users/mikhail/Desktop/out/");
+        final HTTPServer server = new HTTPServer(8080, /*"/Users/mikhail/Desktop/out/"*/ "/home/administrator/Рабочий стол/Out");
         server.start();
 
         System.out.println("Server started...");
