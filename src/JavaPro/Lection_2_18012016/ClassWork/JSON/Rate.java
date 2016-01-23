@@ -1,4 +1,4 @@
-package JavaPro.Lection_2_18012016.ClassWork.JSON2;
+package JavaPro.Lection_2_18012016.ClassWork.JSON;
 
 public class Rate {
     public String id;

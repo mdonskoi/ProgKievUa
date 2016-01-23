@@ -1,4 +1,4 @@
-package JavaPro.Lection_2_18012016.ClassWork.JSON2.task;
+package JavaPro.Lection_2_18012016.ClassWork.JSON.task;
 
 /**
  * Created by Bios on 07.02.2015.
