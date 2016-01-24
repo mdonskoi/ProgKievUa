@@ -9,13 +9,13 @@ public class CacheChecker {
     private long lifeTime;
 
 
-    public CacheChecker(byte[] data, long lifeTime){
+    public CacheChecker(byte[] data, long lifeTime) {
         this.data = data;
         this.lifeTime = lifeTime;
         this.timeStamp = System.currentTimeMillis();
     }
 
-    public boolean isTimeToKill(){
+    public boolean isTimeToKill() {
         System.out.println("Cache lifetime " + (System.currentTimeMillis() - timeStamp));
         return (System.currentTimeMillis() - timeStamp) >= lifeTime;
     }
