@@ -1,13 +1,12 @@
 package JavaPro.Lection_2_18012016.HomeWork.YahooFinanceXML;
 
 
-
 import java.io.*;
 import java.net.*;
 import javax.xml.parsers.*;
+
 import org.w3c.dom.*;
 import org.xml.sax.*;
-
 
 
 public class Main {
@@ -19,7 +18,7 @@ public class Main {
         try {
             String result = performRequest(request);
             System.out.println(result);
-        }catch (IOException e1){
+        } catch (IOException e1) {
             e1.printStackTrace();
         }
         try {
@@ -28,20 +27,21 @@ public class Main {
             Document document = documentBuilder.parse(request);
             Element root = document.getDocumentElement();
             NodeList nodeList = root.getChildNodes();
-            for (int i = 0; i < nodeList.getLength(); i++){
+            for (int i = 0; i < nodeList.getLength(); i++) {
                 Node node = nodeList.item(i);
-                if (node.getNodeType() == Node.ELEMENT_NODE){
+                if (node.getNodeType() == Node.ELEMENT_NODE) {
                     Element element = (Element) node;
                     System.out.println("Convert USD/EUR= " + element.getElementsByTagName("Rate").item(0).getFirstChild().getNodeValue());
                     System.out.println("Convert USD/UAH= " + element.getElementsByTagName("Rate").item(1).getLastChild().getNodeValue());
                 }
             }
-        }catch (IOException | ParserConfigurationException | SAXException e) {
+        } catch (IOException | ParserConfigurationException | SAXException e) {
             e.printStackTrace();
         }
 
     }
-    private  static String performRequest(String urlStr) throws IOException {
+
+    private static String performRequest(String urlStr) throws IOException {
         URL url = new URL(urlStr);
         StringBuilder sb = new StringBuilder();
 
@@ -54,8 +54,8 @@ public class Main {
             do {
                 if ((r = br.read(buf)) > 0)
                     sb.append(new String(buf, 0, r));
-            }while (r>0);
-        }finally {
+            } while (r > 0);
+        } finally {
             http.disconnect();
         }
         return sb.toString();
